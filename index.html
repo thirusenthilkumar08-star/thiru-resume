@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. Thirukumaran - Digital Resume</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-blue: #38bdf8;
+            --accent-purple: #c084fc;
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --border-color: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .resume-card {
+            max-width: 900px;
+            width: 100%;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .header {
+            padding: 40px;
+            background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .header-title h1 {
+            font-size: 2.2rem;
+            color: var(--accent-blue);
+            margin-bottom: 5px;
+        }
+
+        .header-title p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-info i {
+            color: var(--accent-blue);
+        }
+
+        .content {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--accent-purple);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .summary-text {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid var(--accent-blue);
+        }
+
+        .timeline-item h4 {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+
+        .timeline-item .sub-text {
+            color: var(--accent-blue);
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .timeline-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background-color: #0f172a;
+            color: var(--accent-blue);
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .list-style {
+            list-style: none;
+        }
+
+        .list-style li {
+            position: relative;
+            padding-left: 20px;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+
+        .list-style li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent-blue);
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-card">
+    <div class="header">
+        <div class="header-title">
+            <h1>S. Thirukumaran</h1>
+            <p>IT & Cybersecurity Student | Future Engineer</p>
+        </div>
+        <div class="contact-info">
+            <div><i class="fa-solid fa-location-dot"></i> Mayiladuthurai, Tamil Nadu</div>
+            <div><i class="fa-solid fa-envelope"></i> thirusenthilkumar08@gmail.com</div>
+            <div><i class="fa-brands fa-linkedin"></i> linkedin.com/in/thirukumaran</div>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Main Column -->
+        <div>
+            <div class="section">
+                <div class="section-title">
+                    <i class="fa-solid fa-user"></i> About Me
+                </div>
+                <p class="summary-text">
+                    Dedicated IT student at Nehru Institute of Technology focused on Cybersecurity, Linux administration, and network security. Ambitious developer looking to contribute effectively to software engineering and security operations while building core problem-solving strengths.
+                </p>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <i class="fa-solid fa-graduation-cap"></i> Education
+                </div>
+                <div class="timeline-item">
+                    <h4>Nehru Institute of Technology</h4>
+                    <div class="sub-text">B.Tech - Information Technology & Cybersecurity</div>
+                    <p>Focusing on Operating Systems, Network Security, Data Analysis, and Ethical Hacking.</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <i class="fa-solid fa-award"></i> Certifications & Highlights
+                </div>
+                <ul class="list-style">
+                    <li><b>NCC State-Level Certificate:</b> Demonstrated discipline, leadership, and group collaboration.</li>
+                    <li><b>Power BI Workshop:</b> Hands-on analytics and data visualization training.</li>
+                    <li><b>NDLI Club Member:</b> Active student contributor under National Digital Library of India.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sidebar Column -->
+        <div>
+            <div class="section">
+                <div class="section-title">
+                    <i class="fa-solid fa-code"></i> Technical Skills
+                </div>
+                <div class="skills-container">
+                    <span class="skill-badge">Linux</span>
+                    <span class="skill-badge">Networking</span>
+                    <span class="skill-badge">Ethical Hacking</span>
+                    <span class="skill-badge">Power BI</span>
+                    <span class="skill-badge">C / Python</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <i class="fa-solid fa-bullseye"></i> Career Goals
+                </div>
+                <ul class="list-style">
+                    <li><b>Short-Term:</b> Software / Security Engineer</li>
+                    <li><b>Long-Term:</b> TNPSC Police Sub-Inspector</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <div class="section-title">
+                    <i class="fa-solid fa-table-tennis-paddle-ball"></i> Interests
+                </div>
+                <div class="skills-container">
+                    <span class="skill-badge">Table Tennis</span>
+                    <span class="skill-badge">Badminton</span>
+                    <span class="skill-badge">NCC Activities</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
